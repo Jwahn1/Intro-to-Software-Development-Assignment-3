@@ -1,0 +1,7 @@
+00 Empty test
+01 Basic recommendation
+02 Repeat recommendation
+03 Multiple recommendation
+04 Lots of users leave
+05 Lots of recommendations
+06 Cycle of recommendations

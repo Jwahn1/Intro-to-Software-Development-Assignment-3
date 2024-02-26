@@ -1,0 +1,78 @@
+Bug Report
+==========
+
+
+For each fixed bug , please provide the following information:
+  - Class name
+  - Method name
+  - Line number
+	- Cause of bug
+  - Bug fix (or reason bug is not easily fixed)
+
+
+BUGS FOUND AND FIXED BY UNIT TEST (should be 4-5 more bugs to find):
+
+Bug 0:
+  Class: FriendRecommender
+	Method: makeRecommendations()
+	Line: 27
+	Cause: incorrect comparison
+	Fix: ???
+
+Bug 1:
+  Class:
+	Method:
+	Line:
+	Cause:
+	Fix:
+
+Bug 2:
+  Class:
+	Method:
+	Line:
+	Cause:
+	Fix:
+
+Bug 3:
+  Class:
+	Method:
+	Line:
+	Cause:
+	Fix:
+
+Bug 4:
+  Class:
+	Method:
+	Line:
+	Cause:
+	Fix:
+
+Bug 5:
+  Class:
+	Method:
+	Line:
+	Cause:
+	Fix:
+
+BUGS FOUND AND FIXED USING EXPECTED INPUT (2-3):
+
+Bug 6:
+  Class:
+	Method:
+	Line:
+	Cause:
+	Fix:
+
+Bug 7:
+  Class:
+	Method:
+	Line:
+	Cause:
+	Fix:
+
+Bug 8:
+  Class:
+	Method:
+	Line:
+	Cause:
+	Fix:
