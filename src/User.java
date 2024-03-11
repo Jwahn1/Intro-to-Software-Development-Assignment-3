@@ -30,7 +30,9 @@ public class User {
    */
   public User( String nm ) {
     name = nm;
-    users.put(name, this);
+     if(!users.containsKey(nm)) {
+       users.put(name, this);
+     }
   }
 
   /* find
@@ -38,7 +40,7 @@ public class User {
    * such user exists, the method returns null.
    */
   public static User find( String nm ) {
-    return users.get( "nm" );
+    return users.get( nm );
   }
 
   /* friend
@@ -61,9 +63,9 @@ public class User {
    * friendship from adj and from the other user's adj.
    */
   public User unfriend( String f ) {
-    User u = users.get( f );
-    adj.remove( u.name );
-    u.adj.remove( u.name );
+    User u = users.get( f ); // give user v
+    adj.remove( u.name ); //removes v from u's adj friends list
+    u.adj.remove( this.name ); //remove this.name (user u) from user v's friends list
     return u;
   }
 
@@ -85,6 +87,6 @@ public class User {
    * false otherwise.
    */
   public boolean isFriend( User u ) {
-    return !adj.containsKey( u.name );
+    return adj.containsKey( u.name );
   }
 }

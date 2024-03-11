@@ -20,32 +20,32 @@ Bug 0:
 	Fix: ???
 
 Bug 1:
-  Class:
-	Method:
-	Line:
-	Cause:
-	Fix:
+  Class:User
+	Method: User()
+	Line:32-35
+	Cause:constructor did not check if given key was already in the user hashmap
+	Fix: added if() statement which checks whether its in the user hashmap and only then adds the user object
 
 Bug 2:
-  Class:
-	Method:
-	Line:
-	Cause:
-	Fix:
+  Class:User
+	Method: find()
+	Line: 43
+	Cause: the return statement used "nm" as input for the get function instead of get(nm)
+	Fix: removed quotations around nm
 
 Bug 3:
-  Class:
-	Method:
-	Line:
-	Cause:
-	Fix:
+  Class:User
+	Method: unfriend()
+	Line:68
+	Cause: the unfriend statement asked to unfriend user u from user u's friend list
+	Fix: changed the statement to remove this.name from user u's friend list
 
 Bug 4:
-  Class:
-	Method:
-	Line:
-	Cause:
-	Fix:
+  Class: User
+	Method: isFriend()
+	Line:90
+	Cause: the return statement had the boolean reversed
+	Fix: removed negation from the return statement
 
 Bug 5:
   Class:
