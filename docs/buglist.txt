@@ -15,9 +15,9 @@ BUGS FOUND AND FIXED BY UNIT TEST (should be 4-5 more bugs to find):
 Bug 0:
   Class: FriendRecommender
 	Method: makeRecommendations()
-	Line: 27
-	Cause: incorrect comparison
-	Fix: ???
+	Line: 95
+	Cause: incorrect comparison between name string
+	Fix: changed >0 to <0
 
 Bug 1:
   Class:User
@@ -48,11 +48,11 @@ Bug 4:
 	Fix: removed negation from the return statement
 
 Bug 5:
-  Class:
-	Method:
-	Line:
-	Cause:
-	Fix:
+  Class: User
+	Method: leave()
+	Line:82
+	Cause:function would remove the current User v from the static hashmap
+	Fix: removed statement that would remove User v
 
 BUGS FOUND AND FIXED USING EXPECTED INPUT (2-3):
 

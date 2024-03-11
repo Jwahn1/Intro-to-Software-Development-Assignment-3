@@ -92,7 +92,7 @@ public class FriendRecommender {
   public void makeRecommendations( User u, User f, ArrayList<String> al ) {
     for( User v : f.adj.values() ) {
       if( (u != v) && !u.isFriend( v ) ) {
-        if( v.name.compareTo( u.name ) > 0 ) {
+        if( v.name.compareTo( u.name ) < 0 ) {
           al.add( v.name + " and " + u.name + " should be friends" );
         } else {
           al.add( u.name + " and " + v.name + " should be friends" );

@@ -75,10 +75,11 @@ public class User {
    * adj.
    */
   public void leave() {
+
     users.remove( name );
     for( User v : adj.values() ) {
       v.adj.remove( name );
-      users.remove(v.name);
+
     }
   }
 
