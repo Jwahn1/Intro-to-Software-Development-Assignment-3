@@ -96,11 +96,6 @@ public class FriendRecommender {
         prev = s;
       }
     }
-
-
-
-    //tmp is always empty
-    //u and f are never used
   }
 
 
