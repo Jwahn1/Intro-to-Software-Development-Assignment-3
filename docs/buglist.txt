@@ -57,18 +57,18 @@ Bug 5:
 BUGS FOUND AND FIXED USING EXPECTED INPUT (2-3):
 
 Bug 6:
-  Class:
-	Method:
-	Line:
-	Cause:
-	Fix:
+  Class:friendRecommender()
+	Method:recommend()
+	Line:73-81
+	Cause:tmp arraylist is always empty
+	Fix:added for loop to add to tmp the names of possible friends to recommend
 
 Bug 7:
-  Class:
-	Method:
-	Line:
-	Cause:
-	Fix:
+  Class:friendRecommender()
+	Method:recommend()
+	Line:68
+	Cause: the function recommends friends to user f from user u's friend list
+	Fix: switched around user u and f
 
 Bug 8:
   Class:

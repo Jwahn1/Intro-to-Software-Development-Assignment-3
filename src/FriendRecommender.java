@@ -1,7 +1,4 @@
-import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Collections;
+import java.util.*;
 
 /* FriendRecommender.java
  *
@@ -68,17 +65,44 @@ public class FriendRecommender {
    * A comes before B in sorted order. The method does not return anything so
    * the output is passed back in al.
    */
-  public void recommend( User u, User f, ArrayList<String> al ) {
+  public void recommend( User f, User u, ArrayList<String> al ) {
+
+
     ArrayList<String> tmp = new ArrayList<String>();
+
+    for(User store : f.adj.values()){ // we loop through user f's friend list to see who to recommend
+      // dont recommend:
+      // -the common friend as a new friend
+      // -the user looking for friends as a new friend
+      //- users that are already friends with u
+      if((!store.name.equals(f.name)) && (!store.name.equals(u.name)) && (!u.adj.containsValue(store))){
+        tmp.add(store.name);
+      }
+    }
+
+
     Collections.sort( tmp );
     String prev = null;
+
+    //creates the recommendations
     for( String s : tmp ) {
       if( !s.equals( prev ) ) {
-        al.add( s );
+        //checks to see which name should go first
+        if( s.compareTo( u.name ) < 0 ) {
+          al.add( s + " and " + u.name + " should be friends" );
+        } else {
+          al.add( u.name + " and " + s + " should be friends" );
+        }
         prev = s;
       }
     }
+
+
+
+    //tmp is always empty
+    //u and f are never used
   }
+
 
 
   /* makeRecommendations
