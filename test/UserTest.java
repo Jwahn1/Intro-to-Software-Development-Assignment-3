@@ -175,4 +175,5 @@ class UserTest {
     assertFalse(u.isFriend(v), "isFriend returned true");
   }
 
+
 }
